@@ -25,3 +25,11 @@ fun reto2(){
     println("empleados senior: $seniorNames")
 }
 
+fun reto3(){
+    val contactos = listOf("321654", "654321", "987654", "654987", "321654", "654321", "987654")
+    val unicos = contactos.toSet().sorted()
+
+    println("\n--- Reto 3: Contactos Duplicados ---")
+    println("Contactos unicos: $unicos")
+}
+
