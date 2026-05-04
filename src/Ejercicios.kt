@@ -183,3 +183,20 @@ fun reto18() {
     println(fusion)
 }
 
+fun reto19() {
+    val apps = mutableListOf("WhatsApp" to 4.5, "Instagram" to 4.8, "TikTok" to 4.2)
+    // Orden manual (Burbuja simple)
+    for (i in 0 until apps.size - 1) {
+        for (j in 0 until apps.size - 1 - i) {
+            if (apps[j].second < apps[j + 1].second) {
+                val temp = apps[j]
+                apps[j] = apps[j + 1]
+                apps[j + 1] = temp
+            }
+        }
+    }
+    println("\n--- Reto 19: Top Apps ---")
+    println(apps)
+}
+
+
