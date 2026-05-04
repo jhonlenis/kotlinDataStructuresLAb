@@ -155,3 +155,20 @@ fun reto16() {
     println(sensores)
 }
 
+fun reto17() {
+    val almacen = arrayOf(
+        intArrayOf(1, 0, 0, 1),
+        intArrayOf(0, 1, 1, 0),
+        intArrayOf(0, 1, 1, 0),
+        intArrayOf(1, 0, 0, 1)
+    )
+    var sumaPrincipal = 0
+    var sumaSecundaria = 0
+    for (i in 0..3) {
+        sumaPrincipal += almacen[i][i]
+        sumaSecundaria += almacen[i][3 - i]
+    }
+    println("\n--- Reto 17: Matriz Almacén ---")
+    println("Suma Diagonales: Principal $sumaPrincipal, Secundaria $sumaSecundaria")
+}
+
