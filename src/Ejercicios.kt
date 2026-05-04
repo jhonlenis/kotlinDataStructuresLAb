@@ -78,3 +78,13 @@ fun reto7() {
     println("Estado despensa: $despensa")
 }
 
+fun reto8() {
+    val notas = listOf(Pair(4.5, 0.3), Pair(3.8, 0.3), Pair(5.0, 0.4))
+    var definitiva = 0.0
+    for (nota in notas) {
+        definitiva += nota.first * nota.second
+    }
+    println("\n--- Reto 8: Nota Definitiva ---")
+    println("Promedio ponderado: $definitiva")
+}
+
