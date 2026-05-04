@@ -221,3 +221,15 @@ fun reto21() {
     println(mantenimientos)
 }
 
+fun reto22() {
+    val pila = mutableListOf<String>()
+    fun push(plato: String) = pila.add(plato)
+    fun pop() = if (pila.isNotEmpty()) pila.removeAt(pila.size - 1) else "Vacío"
+
+    push("Plato Grande")
+    push("Plato Hondo")
+    println("\n--- Reto 22: Lavando Platos (LIFO) ---")
+    println("Lavando: ${pop()}")
+    println("Quedan: $pila")
+}
+
