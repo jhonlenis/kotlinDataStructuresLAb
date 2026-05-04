@@ -134,3 +134,10 @@ fun reto13() {
     println("Lotes para camiones: $lotes")
 }
 
+fun reto14() {
+    val tickets = listOf(101, 102, 103, 101, 104, 102)
+    val unico = tickets.groupBy { it }.filter { it.value.size == 1 }.keys.firstOrNull()
+    println("\n--- Reto 14: Ticket Único ---")
+    println("Primer ID único: $unico")
+}
+
