@@ -114,3 +114,16 @@ fun reto11() {
     println(maleta)
 }
 
+fun reto12() {
+    val ruta = listOf("0,0", "1,2", "3,3", "1,2", "0,0")
+    var esEspejo = true
+    for (i in 0 until ruta.size / 2) {
+        if (ruta[i] != ruta[ruta.size - 1 - i]) {
+            esEspejo = false
+            break
+        }
+    }
+    println("\n--- Reto 12: Ruta Espejo ---")
+    println("¿Es reversible?: $esEspejo")
+}
+
