@@ -53,3 +53,12 @@ fun reto5() {
     println(invertido)
 }
 
+fun reto6() {
+    val interesesP1 = setOf("Fútbol", "Programación", "Cine", "Gaming")
+    val interesesP2 = setOf("Cine", "Lectura", "Gaming", "Viajes")
+    val comparten = interesesP1.intersect(interesesP2)
+    val exclusivosP1 = interesesP1.subtract(interesesP2)
+    println("\n--- Reto 6: Match de Intereses ---")
+    println("Comparten: $comparten | Solo P1: $exclusivosP1")
+}
+
