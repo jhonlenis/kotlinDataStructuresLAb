@@ -295,3 +295,10 @@ fun reto27() {
     println("Ganadores: $ganadores (Promedio: $promedio)")
 }
 
+fun reto28() {
+    val tarifas = (1..10).associateWith { it * 5000 } // $5000 por hora
+    val horas = 4
+    println("\n--- Reto 28: Parking ---")
+    println("Costo por $horas horas: ${tarifas[horas]}")
+}
+
