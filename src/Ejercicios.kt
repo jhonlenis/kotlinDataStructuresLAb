@@ -33,3 +33,13 @@ fun reto3(){
     println("Contactos unicos: $unicos")
 }
 
+fun reto4(){
+    val carrito = listOf("Arroz", "Cafe", "Arepas", "Galletas", "Frutiño")
+    val conteo = mutableMapOf<String, Int>()
+    for (producto in carrito) {
+        conteo[producto] = conteo.getOrDefault(producto, 0) + 1
+    }
+    println("\n --- Reto 4: Carrito de compras ---")
+    println("conteo: $conteo")
+}
+
