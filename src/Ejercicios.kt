@@ -267,3 +267,23 @@ fun reto25() {
     println("Promedio sin outliers: ${tiemposReales.average()}")
 }
 
+fun reto26() {
+    val logs = listOf("UP", "UP", "DOWN", "UP", "UP", "UP")
+    val resumen = mutableListOf<Pair<String, Int>>()
+    if (logs.isNotEmpty()) {
+        var actual = logs[0]
+        var cuenta = 0
+        for (log in logs) {
+            if (log == actual) cuenta++
+            else {
+                resumen.add(actual to cuenta)
+                actual = log
+                cuenta = 1
+            }
+        }
+        resumen.add(actual to cuenta)
+    }
+    println("\n--- Reto 26: Compresión de Logs ---")
+    println(resumen)
+}
+
