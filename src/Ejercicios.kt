@@ -127,3 +127,10 @@ fun reto12() {
     println("¿Es reversible?: $esEspejo")
 }
 
+fun reto13() {
+    val paquetes = (1..50).toList()
+    val lotes = paquetes.chunked(10)
+    println("\n--- Reto 13: Reparto ---")
+    println("Lotes para camiones: $lotes")
+}
+
