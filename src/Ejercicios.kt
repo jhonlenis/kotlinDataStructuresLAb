@@ -141,3 +141,10 @@ fun reto14() {
     println("Primer ID único: $unico")
 }
 
+fun reto15() {
+    val precios = mapOf("Pan" to 2000, "Carne" to 60000, "Vino" to 80000)
+    val conIva = precios.mapValues { if (it.value > 50000) it.value * 1.19 else it.value }
+    println("\n--- Reto 15: IVA Selectivo ---")
+    println(conIva)
+}
+
