@@ -62,3 +62,19 @@ fun reto6() {
     println("Comparten: $comparten | Solo P1: $exclusivosP1")
 }
 
+fun reto7() {
+    val despensa = mutableMapOf("Arroz" to 5, "Café" to 2, "Leche" to 1)
+    fun consumir(producto: String) {
+        val cantidad = despensa[producto] ?: 0
+        if (cantidad > 1) {
+            despensa[producto] = cantidad - 1
+        } else {
+            despensa.remove(producto)
+            println("¡Alerta! $producto se ha agotado.")
+        }
+    }
+    println("\n--- Reto 7: Inventario ---")
+    consumir("Leche")
+    println("Estado despensa: $despensa")
+}
+
