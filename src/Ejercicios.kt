@@ -43,3 +43,13 @@ fun reto4(){
     println("conteo: $conteo")
 }
 
+fun reto5() {
+    val urls = arrayOf("google.com", "github.com", "stackoverflow.com", "medium.com", "kotlinlang.org")
+    val invertido = mutableListOf<String>()
+    for (i in urls.size - 1 downTo 0) {
+        invertido.add(urls[i])
+    }
+    println("\n--- Reto 5: Historial Invertido ---")
+    println(invertido)
+}
+
