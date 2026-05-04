@@ -96,3 +96,14 @@ fun reto9() {
     }
 }
 
+fun reto10() {
+    val empleados = mutableListOf("Alex", "Beto", "Cata", "Dani", "Ely", "Fer", "Gabi")
+    val k = 2
+    repeat(k) {
+        val ultimo = empleados.removeAt(empleados.size - 1)
+        empleados.add(0, ultimo)
+    }
+    println("\n--- Reto 10: Rotación de Turnos ---")
+    println(empleados)
+}
+
