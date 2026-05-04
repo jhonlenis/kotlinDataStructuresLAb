@@ -317,3 +317,18 @@ fun reto29() {
     println("Pareja encontrada: $pareja")
 }
 
+fun reto30() {
+    val layout = arrayOf(
+        arrayOf("A1", "A2"),
+        arrayOf("B1", "B2"),
+        arrayOf("C1", "C2")
+    )
+    val transpuesta = Array(2) { arrayOfNulls<String>(3) }
+    for (i in 0..2) {
+        for (j in 0..1) {
+            transpuesta[j][i] = layout[i][j]
+        }
+    }
+    println("\n--- Reto 30: Layout Transpuesto ---")
+    transpuesta.forEach { fila -> println(fila.joinToString(", ")) }
+}
