@@ -172,3 +172,14 @@ fun reto17() {
     println("Suma Diagonales: Principal $sumaPrincipal, Secundaria $sumaSecundaria")
 }
 
+fun reto18() {
+    val chef1 = mapOf("Sal" to 10.0, "Harina" to 500.0)
+    val chef2 = mapOf("Sal" to 5.0, "Agua" to 200.0)
+    val fusion = chef1.toMutableMap()
+    for ((ing, cant) in chef2) {
+        fusion[ing] = fusion.getOrDefault(ing, 0.0) + cant
+    }
+    println("\n--- Reto 18: Fusión de Recetas ---")
+    println(fusion)
+}
+
