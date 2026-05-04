@@ -88,3 +88,11 @@ fun reto8() {
     println("Promedio ponderado: $definitiva")
 }
 
+fun reto9() {
+    val paises = mapOf("CO" to "Colombia", "MX" to "México", "AR" to "Argentina")
+    println("\n--- Reto 9: Códigos ISO ---")
+    for ((codigo, nombre) in paises) {
+        println("El código $codigo pertenece a $nombre")
+    }
+}
+
