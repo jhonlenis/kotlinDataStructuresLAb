@@ -208,3 +208,16 @@ fun reto20() {
     println(combinada)
 }
 
+fun reto21() {
+    fun esPrimo(n: Int): Boolean {
+        if (n < 2) return false
+        for (i in 2..Math.sqrt(n.toDouble()).toInt()) {
+            if (n % i == 0) return false
+        }
+        return true
+    }
+    val mantenimientos = (1..100).filter { esPrimo(it) }
+    println("\n--- Reto 21: Pisos con Mantenimiento (Primos) ---")
+    println(mantenimientos)
+}
+
