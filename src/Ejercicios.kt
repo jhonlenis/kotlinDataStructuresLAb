@@ -247,3 +247,15 @@ fun reto23() {
     println(diferencias)
 }
 
+fun reto24() {
+    val manifiesto = "( ( ) ) ( )"
+    var balance = 0
+    for (char in manifiesto) {
+        if (char == '(') balance++
+        else if (char == ')') balance--
+        if (balance < 0) break
+    }
+    println("\n--- Reto 24: Contenedores Balanceados ---")
+    println("¿Está balanceado?: ${balance == 0}")
+}
+
