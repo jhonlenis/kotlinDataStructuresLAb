@@ -107,3 +107,10 @@ fun reto10() {
     println(empleados)
 }
 
+fun reto11() {
+    val objetos = listOf("Camisa" to 1, "Laptop" to 3, "Zapatos" to 2, "Libro" to 1)
+    val maleta = objetos.groupBy({ it.second }, { it.first })
+    println("\n--- Reto 11: Maleta por Peso ---")
+    println(maleta)
+}
+
