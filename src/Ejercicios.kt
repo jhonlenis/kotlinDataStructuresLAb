@@ -148,3 +148,10 @@ fun reto15() {
     println(conIva)
 }
 
+fun reto16() {
+    val sensores = mutableListOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    sensores.removeAll { it % 3 == 0 }
+    println("\n--- Reto 16: Limpieza de Sensores ---")
+    println(sensores)
+}
+
