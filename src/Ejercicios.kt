@@ -332,3 +332,4 @@ fun reto30() {
     println("\n--- Reto 30: Layout Transpuesto ---")
     transpuesta.forEach { fila -> println(fila.joinToString(", ")) }
 }
+ 
