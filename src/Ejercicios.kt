@@ -259,3 +259,11 @@ fun reto24() {
     println("¿Está balanceado?: ${balance == 0}")
 }
 
+fun reto25() {
+    val tiempos = mutableListOf(120.0, 110.0, 115.0, 150.0, 100.0)
+    tiempos.sort()
+    val tiemposReales = tiempos.subList(1, tiempos.size - 1)
+    println("\n--- Reto 25: Promedio Real Maratón ---")
+    println("Promedio sin outliers: ${tiemposReales.average()}")
+}
+
