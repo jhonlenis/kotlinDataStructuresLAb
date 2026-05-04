@@ -200,3 +200,11 @@ fun reto19() {
 }
 
 
+fun reto20() {
+    val listaA = listOf("Ana", "Carlos")
+    val listaB = listOf("Beto", "Daniel")
+    val combinada = (listaA + listaB).sorted() // sorted no es .sort() mutable, pero si quieres manual usa un merge simple
+    println("\n--- Reto 20: Agendas Combinadas ---")
+    println(combinada)
+}
+
